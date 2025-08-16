@@ -1,0 +1,80 @@
+.modalContainer {
+	align-items: center;
+	background-color: rgb(0 0 0 / 0.92);
+	border: solid 1px #74717160;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 10px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	z-index: 99999;
+}
+
+@media (min-width: 768px) {
+	.modalContainer {
+		min-height: 600px;
+		min-width: 500px;
+		right: 20px;
+		top: 20px;
+	}
+}
+.modalTable {
+    
+    border-collapse: collapse;
+    margin: 20px 0;
+    max-height: 300px;
+    overflow-y: auto;
+    width: 95%;
+    align-content: center;
+   
+
+}
+.modalTable th, .modalTable td {
+   
+    padding: 8px;
+    text-align: center;
+    color: #fff;
+    font-size: medium;
+}
+
+.modalTotalContainer h3 {
+    color:#fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.modalCloseButton{
+	all: unset;
+    height: 20px;
+	margin: 10px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 20px;
+}
+
+
+
+.modalButtonContainer{
+    margin: 0 auto;
+	width: 95%;
+    background-color: #EDB00F;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.modalButtonContainer button{
+    all: unset;
+	background-color: #EDB00F;
+	border-radius: 5px;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-size: 1rem;
+	padding: 15px 10px;
+	text-align: center;
+	width: 95%;
+}
+
