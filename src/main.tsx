@@ -5,6 +5,7 @@ import { LayoutMain } from './components/layouts/LayoutMain.tsx'
 import './index.css'
 import { Card } from './pages/Card/CardProduct.tsx'
 import { Home } from './pages/Home/Home.tsx'
+import { CartProvider } from './context/CartProvider.tsx'
 
 
 
@@ -22,7 +23,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    {/* <App /> */}
-    <RouterProvider router={router} />
+    <CartProvider>
+      <RouterProvider router={router} />
+    </CartProvider>
   </StrictMode>,
 )
