@@ -1,9 +1,18 @@
 import styles from './CardProduct.module.css';
-import { useContext } from 'react';
+import { useContext, FC } from 'react';
 import { CartContext } from '../../context/CartContext';
+import type { Product } from '../../interface';
 
 
-export const Card = ({product}) => {
+
+interface Props {
+    product: Product[];
+  }
+
+export const Card: FC<Props> = ({product}) => {
+
+
+ 
 
   const {dispatch} = useContext(CartContext);
 
