@@ -18,3 +18,11 @@ export interface Release {
     jp: string;
     na: string;
 }
+
+export interface CardProduct {
+  id: number;
+  name: string;
+  image: string;
+  quantity: number;
+  price: number;
+}
