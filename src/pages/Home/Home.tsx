@@ -14,15 +14,6 @@ export const Home = () => {
   const [isLoading, setisLoading] = useState(true);
 
 
-  // const getProducts = async () => {
-  //   try {
-  //     const response = await fetch('http://localhost:3000/products');
-  //     const data = await response.json()
-  //     setProducts(data);
-  //   } catch (error) {
-  //     console.error("Error fetching products:", error);
-  //   }
-  // }
 
   useEffect(() => {
     getProducts().then((data) => {
@@ -44,7 +35,7 @@ export const Home = () => {
       <div className={styles.container}>
         {products.map((product)=> (
           <Card 
-            key={product.tail}
+            key={product.id}
             product={product}/>
         ))}
 
